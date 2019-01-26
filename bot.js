@@ -1,7 +1,7 @@
 
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = 'P'
+const prefix = '%'
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -16,7 +16,7 @@ client.on('message', msg => {
 
 client.on("message", message => {
 
-    if (message.content.startsWith("Pbc")) {
+    if (message.content.startsWith("perfix + bc")) {
                  if (!message.member.hasPermission("ADMINISTRATOR"))  return;
   let args = message.content.split(" ").slice(1);
   var argresult = args.join(' ');
